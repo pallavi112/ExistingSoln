@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TreeView  HorizontalAlignment="Left" Height="177" Margin="71,22,0,0" VerticalAlignment="Top" Width="143" Cursor="Arrow" MouseRightButtonDown="TreeView_MouseRightButtonDown">
+            <TreeViewItem Header="Module" IsExpanded="True">
+                <TreeViewItem Header="Bookmark" HorizontalAlignment="Left" Width="120" IsExpanded="True">
+                    <TreeViewItem Header="Plus" HorizontalAlignment="Left" Width="101" MouseRightButtonDown="TreeViewItem_MouseRightButtonDown"  MouseDoubleClick="TreeViewItem_MouseDoubleClick"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Widgets" HorizontalAlignment="Left" Width="120" IsExpanded="True">
+                    <TreeViewItem Header="Draw" HorizontalAlignment="Left" Width="101"/>
+                    <TreeViewItem Header="Paint" HorizontalAlignment="Left" Width="101"/>
+                    <TreeViewItem Header="Search" HorizontalAlignment="Left" Width="101"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Map" HorizontalAlignment="Left" Width="120" IsExpanded="True">
+                    <TreeViewItem Header="Layers" HorizontalAlignment="Left" Width="101"/>
+                </TreeViewItem>
+            </TreeViewItem>
+
+        </TreeView>
+
+    </Grid>
+</Window>

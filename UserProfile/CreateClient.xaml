@@ -1,0 +1,68 @@
+﻿<Window x:Class="UserProfile.CreateClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Client" Height="400" Width="600">
+    <Grid   Background="LightBlue">
+        <Grid Margin="0,30,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!--Field names-->
+            <Grid Grid.Column="0">
+                <StackPanel Orientation="Vertical">
+                    <Line X1="1" Height="20"/>
+                    <TextBlock x:Name="ClientName" Text="Name" HorizontalAlignment="Center" Height="20" Width="150" FontSize="15"/>
+                    <Line X1="1" Height="25"/>
+                    <TextBlock x:Name="EmailID" Text="Email ID" HorizontalAlignment="Center" Height="20" Width="150" FontSize="15"/>
+                    <Line X1="1" Height="25"/>
+                    <TextBlock x:Name="Location" Text="Location" HorizontalAlignment="Center" Height="20" Width="150" FontSize="15"/>
+                    <Line X1="1" Height="25"/>
+                    <TextBlock x:Name="ContactNo" Text="Contact Number" HorizontalAlignment="Center" Height="20" Width="150" FontSize="15"/>
+                    <Line X1="1" Height="25"/>
+                    <!--<TextBlock x:Name="UserGroup1" Text="User Group" HorizontalAlignment="Center" Height="20" Width="150" FontSize="13"/>-->
+                </StackPanel>
+            </Grid>
+
+            <!--Filed values-->
+            <Grid Grid.Column="1">
+                <StackPanel Orientation="Vertical">
+                    <Line X1="1" Height="20"/>
+                    <TextBox x:Name="ClientNameValue" Width="200" HorizontalAlignment="Left" Height="25"/>
+                    <Line X1="1" Height="20"/>
+                    <TextBox x:Name="EmailIDValue" Width="200" HorizontalAlignment="Left" Height="25"/>
+                    <Line X1="1" Height="20"/>
+                    <TextBox x:Name="LocationValue" Width="200" HorizontalAlignment="Left" Height="25"/>
+                    <Line X1="1" Height="20"/>
+                    <TextBox x:Name="ConatctNoValue" Width="200" HorizontalAlignment="Left" Height="25"/>
+                    <Line X1="1" Height="20"/>
+                    <!--<ComboBox x:Name="UserGroup1Value" Width="200" HorizontalAlignment="Left" Height="23">
+                        <ComboBoxItem>Field User</ComboBoxItem>
+                        <ComboBoxItem>Reviewer</ComboBoxItem>
+                        <ComboBoxItem>Screener</ComboBoxItem>
+                        <ComboBoxItem>Vender</ComboBoxItem>
+                        <ComboBoxItem>PowerUser</ComboBoxItem>
+                        <ComboBoxItem>General</ComboBoxItem>
+                        <ComboBoxItem>Construction Management</ComboBoxItem>
+                        <ComboBoxItem>Environmental</ComboBoxItem>
+                        <ComboBoxItem>Equipment Support</ComboBoxItem>
+                        <ComboBoxItem>Maintenance Systems and Processes</ComboBoxItem>
+                        <ComboBoxItem>Operations</ComboBoxItem>
+                        <ComboBoxItem>Right of Way</ComboBoxItem>
+                        <ComboBoxItem>Security Group</ComboBoxItem>
+                        <ComboBoxItem>Vegetation Management</ComboBoxItem>
+                        <ComboBoxItem>Engineering</ComboBoxItem>
+                        <ComboBoxItem>System Protection</ComboBoxItem>
+                    </ComboBox>-->
+                    <Line X1="1" Height="35"/>
+
+                    <Button x:Name="AddClientBtn" Content="Add" Width="100" Height="25" HorizontalAlignment="Center" Margin="0,50,0,0"  FontSize="13"></Button>
+
+
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Window>

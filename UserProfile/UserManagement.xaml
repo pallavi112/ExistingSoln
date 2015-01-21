@@ -1,0 +1,105 @@
+﻿<Window x:Class="UserProfile.UserManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="User Settings" Height="400" Width="600">
+    <Grid  Background="LightBlue">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0" Margin="10,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Line X1="1" Height="10"/>
+                <TextBlock Text="Set rules that apply to all Users" FontSize="15"/>
+                <Line X1="1" Height="10"/>
+                
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox/>
+                    <TextBlock Text=" Lock accounts after "/>
+                    <ComboBox Width="50" Height="20">
+                        <ComboBoxItem>1</ComboBoxItem>
+                        <ComboBoxItem>2</ComboBoxItem>
+                        <ComboBoxItem>3</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text=" failed login attempt(s)"/>
+                </StackPanel>
+                <Line X1="1" Height="10"/>
+                
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox/>
+                    <TextBlock Text=" Allow locked accounts to login after "/>
+                    <ComboBox Width="50" Height="20">
+                        <ComboBoxItem>5</ComboBoxItem>
+                        <ComboBoxItem>10</ComboBoxItem>
+                        <ComboBoxItem>20</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text=" minutes(s)"/>
+                </StackPanel>
+                <Line X1="1" Height="10"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox/>
+                    <TextBlock Text=" Force password change every "/>
+                    <ComboBox Width="50" Height="20">
+                        <ComboBoxItem>1</ComboBoxItem>
+                        <ComboBoxItem>2</ComboBoxItem>
+                        <ComboBoxItem>3</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text=" month(s)"/>
+                </StackPanel>
+                <Line X1="1" Height="10"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox/>
+                    <TextBlock Text=" Log idle user out after "/>
+                    <ComboBox Width="50" Height="20">
+                        <ComboBoxItem>10</ComboBoxItem>
+                        <ComboBoxItem>20</ComboBoxItem>
+                        <ComboBoxItem>30</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text=" minute(s)"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="10,0,0,0">
+            <StackPanel Orientation="Vertical">
+                <Line X1="1" Height="10"/>
+                
+                <TextBlock Text="Password complexity rules" FontSize="15"/>
+                <Line X1="1" Height="10"/>
+                
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox/>
+                    <TextBlock Text=" Must contain atleast one upper-case character"/>
+                </StackPanel>
+                <Line X1="1" Height="05"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox/>
+                    <TextBlock Text=" Must contain atleast one numeric digit"/>
+                </StackPanel>
+                <Line X1="1" Height="05"/>
+                
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox/>
+                    <TextBlock Text=" Must contain atleast one special character"/>
+                </StackPanel>
+                <Line X1="1" Height="05"/>
+                
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox/>
+                    <TextBlock Text=" Must be atleast 6 characters long"/>
+                </StackPanel>
+                <Line X1="1" Height="05"/>
+                
+            </StackPanel>
+        </Grid>
+        
+        <Button Grid.Row="2" Content="Save" FontSize="15" Height="25" Width="70"/>
+        
+    </Grid>
+</Window>
